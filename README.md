@@ -36,22 +36,23 @@
 └── LICENSE
 ```
 ## **环境依赖**
-
+```test
 Python >= 3.8
 PyTorch
 torchvision
 TensorBoard
+```
 
 ## 模型训练
 
-使用默认参数进行训练：python train.py
-自定义训练参数示例：python train.py --epochs 30 --batch_size 64 --lr 0.01
+使用默认参数进行训练：```bash python train.py ```
+自定义训练参数示例：```bash  python train.py --epochs 30 --batch_size 64 --lr 0.01 ```
 
 ## 断点恢复训练
-若训练过程中断，可通过以下命令继续训练：python train.py --resume
+若训练过程中断，可通过以下命令继续训练：```bash python train.py --resume ```
 
 ## 可视化训练过程
-训练过程中会自动生成 TensorBoard 日志，使用以下命令查看：tensorboard --logdir logs
+训练过程中会自动生成 TensorBoard 日志，使用以下命令查看：```bash tensorboard --logdir logs ```
 
 ## License
 本项目基于 MIT License 开源，详见 LICENSE 文件。
